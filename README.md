@@ -22,3 +22,9 @@ openssl pkcs12 -in  importedStore.p12 -noout -info
 
 
 openssl.cnf config file is available in location ./opensslconf/openssl.cnf
+
+steps to invoke third party https url from curl 
+1. create .pem  file for curl using  downloaded .cer file from target url. 
+
+openssl x509 -inform der -in testhostClient.cer -out testhostClientPem.pem
+
